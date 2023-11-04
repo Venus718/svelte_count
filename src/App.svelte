@@ -7,11 +7,11 @@
 <main>
     <h1 class="text-6xl title">Multiple Counter</h1>
     {#each $values as value, index}
-      <Card key = {index} number = {value}/>
+      <Card key = {index} value = {value}/>
     {/each}
     <div class="max-w-sm mx-auto text-center bg-green-400 rounded text-white cursor-pointer" on:click={() => values.add()}>new counter</div>
-    <p>title list: {$values.map(() => 'new').toString()}</p>
-    <p>sum of count: {$values.length}</p>
+    <p>title list: {$values.map((value) => value.name).toString()}</p>
+    <p>sum of count: {$values.reduce((sum, value) => sum + value.number,0)}</p>
 </main>
 
 <style>
