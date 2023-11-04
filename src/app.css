@@ -81,6 +81,12 @@ button:focus-visible {
 body {
   margin: 0px;
 }
+html {
+  line-height: 1.5;
+}
+p {
+  margin: 0;
+}
 /**/
 .flex {
   display: flex;
@@ -127,6 +133,10 @@ body {
 .ml-auto {
   margin-left: auto;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .rounded {
   border-radius: 0.25rem;
@@ -156,6 +166,10 @@ body {
   --bg-opacity: 1;
   background-color: rgba(236,201,75,var(--bg-opacity));
 }
+.bg-green-400 {
+  --bg-opacity: 1;
+  background-color: rgba(104,211,145,var(--bg-opacity));
+}
 
 .text-gray-600 {
   --text-opacity: 1;
@@ -164,6 +178,13 @@ body {
 .text-gray-500 {
   --text-opacity: 1;
   color: rgba(160,174,192,var(--text-opacity));
+}
+.text-white {
+  --text-opacity: 1;
+  color: rgba(255,255,255,var(--text-opacity));
+}
+.text-center {
+  text-align: center;
 }
 
 .px-1 {
