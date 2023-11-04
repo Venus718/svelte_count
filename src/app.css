@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -42,11 +42,11 @@ h1 {
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
+  /* margin: 0 auto;
   padding: 2rem;
-  text-align: center;
-}
-
+  text-align: center; */
+/* } */
+/*
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -77,4 +77,128 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+body {
+  margin: 0px;
+}
+/**/
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+
+.text-6xl {
+  font-size: 4rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+.w-32 {
+  width: 8rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.ml-auto {
+  margin-left: auto;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-l {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.rounded-r {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.bg-gray-100 {
+  --bg-opacity: 1;
+  background-color: rgba(247,250,252,var(--bg-opacity));
+}
+.bg-red-500 {
+  --bg-opacity: 1;
+  background-color: rgba(245,101,101,var(--bg-opacity));
+}
+.bg-blue-500 {
+  --bg-opacity: 1;
+  background-color: rgba(66,153,225,var(--bg-opacity));
+}
+.bg-yellow-500 {
+  --bg-opacity: 1;
+  background-color: rgba(236,201,75,var(--bg-opacity));
+}
+
+.text-gray-600 {
+  --text-opacity: 1;
+  color: rgba(113,128,150,var(--text-opacity));
+}
+.text-gray-500 {
+  --text-opacity: 1;
+  color: rgba(160,174,192,var(--text-opacity));
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+.centerize {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn {
+  --text-opacity: 1;
+  color: rgba(255,255,255,var(--text-opacity));
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.125rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
